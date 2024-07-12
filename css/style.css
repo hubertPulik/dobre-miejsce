@@ -25,17 +25,29 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -71,12 +83,14 @@ a:visited {
   --light: rgb(255, 239, 214);
   --dark: rgb(46, 46, 46);
   --mont: montserrat;
-  --phil: philosopher
+  --phil: philosopher;
 }
 
 /* globals */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--phil);
   margin-bottom: 1rem;
 }
@@ -108,10 +122,11 @@ h2 {
   font-size: 2rem;
 }
 
-p, li {
+p,
+li {
   font-family: var(--mont);
   font-size: 1.2rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 button {
@@ -123,14 +138,14 @@ button {
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 40px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
   background-color: var(--secondary);
   color: black;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .mobile {
@@ -139,7 +154,11 @@ button:hover {
 
 /* sections */
 
-#start, #oferta, #zabiegi, #bio, #kontakt {
+#start,
+#oferta,
+#zabiegi,
+#bio,
+#kontakt {
   scroll-margin-top: 6rem;
 }
 
@@ -175,7 +194,8 @@ header {
   background-size: contain;
 }
 
-.dropdown, .dropdown__inner {
+.dropdown,
+.dropdown__inner {
   position: relative;
 }
 
@@ -194,7 +214,7 @@ header {
   padding: 2rem;
   z-index: 4;
   transform: translateY(-400px) scaleY(0);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown__menu__inner {
@@ -207,21 +227,22 @@ header {
   padding: 2rem;
   z-index: 4;
   transform: translateX(300px) scaleY(0);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.dropdown:hover .dropdown__menu, .dropdown__menu:hover {
+.dropdown:hover .dropdown__menu,
+.dropdown__menu:hover {
   transform: translateY(0) scaleY(1);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown__inner:hover .dropdown__menu__inner {
   transform: translateX(0) scaleY(1);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown__menu li {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 main {
@@ -281,7 +302,8 @@ nav ul li {
   font-size: 1.5rem;
 }
 
-.hero, .hero__box {
+.hero,
+.hero__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,7 +345,7 @@ nav ul li {
   margin-bottom: 0;
 }
 
-.title__area h1{
+.title__area h1 {
   font-size: 3rem;
 }
 
@@ -342,7 +364,8 @@ main h2 {
 }
 
 .main__page {
-  max-width: 1200px;margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main__page p {
@@ -375,12 +398,12 @@ main h2 {
   flex-direction: column;
   align-items: center;
   transform: scale(1) translateY(0px);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .featured__icon:hover {
   transform: scale(1.05) translateY(-15px);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .featured__icon img {
@@ -493,7 +516,7 @@ footer img {
 }
 
 footer p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 footer h3 {
@@ -501,12 +524,16 @@ footer h3 {
 }
 
 .pricing {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .pricing h3 {
   font-size: 2rem;
+}
+
+.pricing p {
+  font-size: 1rem;
 }
 
 .pricing p span {
@@ -528,11 +555,17 @@ footer h3 {
 /* responsive */
 
 @media screen and (max-width: 1100px) {
-  .hero__box, .featured__icons, .offer__row, .bio__box, footer {
+  .hero__box,
+  .featured__icons,
+  .offer__row,
+  .bio__box,
+  footer {
     flex-direction: column;
   }
 
-  .hero__box, .intro, .bio__text {
+  .hero__box,
+  .intro,
+  .bio__text {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -542,7 +575,8 @@ footer h3 {
     margin: 2rem auto;
   }
 
-  .featured__icons, .bio__box {
+  .featured__icons,
+  .bio__box {
     align-items: center;
   }
 
@@ -581,7 +615,8 @@ footer h3 {
     width: 90%;
   }
 
-  .header__box-mobile .header__menu, .header__box-mobile .header__menu ul {
+  .header__box-mobile .header__menu,
+  .header__box-mobile .header__menu ul {
     flex-direction: column;
   }
 
@@ -618,23 +653,25 @@ footer h3 {
     cursor: pointer;
   }
 
-  .bar-1, .bar-2, .bar-3 {
-    transition: all .3s ease-in-out;
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    transition: all 0.3s ease-in-out;
   }
 
   .bar-1-open {
     transform: translateY(8px) rotate(45deg);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .bar-2-open {
     background-color: var(--dark);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .bar-3-open {
     transform: translateY(-8px) rotate(-45deg);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .header__box-mobile {
@@ -648,58 +685,59 @@ footer h3 {
     padding-top: 3rem;
     background-color: var(--dark);
     transform: translateY(-400px) scaleY(0);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .header__menu-open {
     transform: translateY(60px) scaleY(1);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .dropdown-mobile {
     text-align: center;
   }
 
- .dropdown-mobile li a{
-  font-size: 1rem;
- }
+  .dropdown-mobile li a {
+    font-size: 1rem;
+  }
 
- nav ul {
-  gap: 10px;
- }
+  nav ul {
+    gap: 10px;
+  }
 
- .second__level, .third__level {
-  margin-top: 0.5rem;
-  gap: 0px;
- }
+  .second__level,
+  .third__level {
+    margin-top: 0.5rem;
+    gap: 0px;
+  }
 
- .second__level li {
-  margin-bottom: 0;
- }
+  .second__level li {
+    margin-bottom: 0;
+  }
 
- .main__page{
-  padding-left: 2rem;
-  padding-right: 1rem;
- }
+  .main__page {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
 
- .title__area {
-  /* margin-top: 0; */
-  text-align: center;
- }
+  .title__area {
+    /* margin-top: 0; */
+    text-align: center;
+  }
 
- .hero {
-  /* margin-top: 0; */
-  padding-top: 3rem;
- }
+  .hero {
+    /* margin-top: 0; */
+    padding-top: 3rem;
+  }
 
- .dropdown__menu__openbox {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 3;
- }
+  .dropdown__menu__openbox {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 3;
+  }
 
- .dropdown__menu__openbox .header__menu-mobile {
-  margin: 0 auto;
- }
+  .dropdown__menu__openbox .header__menu-mobile {
+    margin: 0 auto;
+  }
 }
